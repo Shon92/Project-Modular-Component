@@ -1,0 +1,43 @@
+<!-- Expand / Collapse Icon -->
+<a style="float:left;" (click)="expandCategory()">
+    <img class="expandCollapseIcon" 
+         src="{{expandImage}}">
+</a>
+<!-- End Expand / Collapse Icon -->
+
+<!-- Category name -->
+<span textContent= "{{getCategoryItem.name}}" style="font-size: medium"></span>
+<!-- End Category name -->
+
+<!-- Colored Can icon -->
+<a style="float:right;" (click)="selectCategory()">
+    <img src="src/app/Images/coloredCanIcon.png" 
+         style="cursor: pointer;"
+         *ngIf="getCategoryItem.selected"/>
+
+    <img src="src/app/Images/CanIcon.png" 
+         style="cursor: pointer;"
+         *ngIf="!getCategoryItem.selected"/>
+</a>
+<!--End Colored Can icon -->
+
+<!-- SubCategory List -->
+<ul class="list-group" *ngIf="expanded">
+    <li class="list-group-item"
+        *ngFor="let subCategoryItem of getCategoryItem.subCategoryList"
+        (click)= "selectSubCategory(subCategoryItem)">
+
+        <input class="subCatCheckBox" 
+        type="checkbox" 
+        [checked]="subCategoryItem.isChecked">  
+
+         <span class="subCatContent" 
+               textContent="{{subCategoryItem.name}}"
+               [style.font-weight]="subCategoryItem.isChecked ? 'bold': 'normal'"></span> 
+        
+        <img class="subCatDotImage"
+         src="src/app/Images/coloredDot.png" 
+         *ngIf="getCategoryItem.selected"/>
+    </li>
+</ul>
+<!-- End SubCategory List -->

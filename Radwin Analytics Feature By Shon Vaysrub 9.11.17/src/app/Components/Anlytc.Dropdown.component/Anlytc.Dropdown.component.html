@@ -1,0 +1,26 @@
+<div id="analytics_component">
+  <!-- Title and button -->
+  <div>
+    <label id="analytics_title">Anlytics</label>
+    <button
+     id="clear_button"
+     type="button"  
+     (click)="clearCheckBoxes()" 
+     >Clear
+     </button>
+  </div>
+<!-- End of Title and button -->
+
+<!-- Category Component List -->
+<ul class="list-group">
+    <li 
+    class="list-group-item" 
+    *ngFor="let Category of categoryList">
+      <category
+      [getCategoryItem] = "Category"
+      (onSelectCategory) = "deselectTheRestCategories($event)">
+      </category>
+    </li>
+</ul> 
+<!-- End of Category Component List -->
+</div>

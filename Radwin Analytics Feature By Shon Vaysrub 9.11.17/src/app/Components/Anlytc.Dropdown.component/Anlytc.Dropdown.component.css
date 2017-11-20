@@ -1,0 +1,44 @@
+#analytics_component{
+    margin-top: 0.5em; 
+}
+
+#analytics_title{
+    margin-left: 0.75em; 
+    color:#727475;
+    letter-spacing: 2px;
+}
+
+#clear_button{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 0.85em;
+    color:grey;
+    opacity: 0.85;
+    float:right;
+    margin-right: 2em; 
+    margin-top:0.35em;
+}
+
+.list-group-item{
+    position: relative;
+    display: block;
+    padding: 12px 5px;
+    margin-bottom: -0.75px;
+    margin-top:1em;
+    background-color: #fff;
+    border: none; 
+    width: 19.75em;
+    border-style: solid;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom-width:thin; 
+    border-bottom-style:solid; 
+    border-bottom-color:#c1c7c9;
+}
+
+.list-group{
+    padding-left: 0;
+    margin-bottom: 0.5px;
+}

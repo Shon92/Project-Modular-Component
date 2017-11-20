@@ -1,0 +1,40 @@
+.list-group-item{
+    position: relative;
+    display: block;
+    margin-top:0.75em;
+    background-color: #fff;
+    border: none; 
+    width: 19.5em;
+    padding: 10px 5px;
+    color:grey;
+    cursor: pointer;
+}
+
+.list-group{
+    padding-left: 0;
+    margin-bottom: 1px;
+}
+
+.subCatCheckBox{
+    /* Awaiting for changes */
+}
+
+.subCatContent{
+    margin-left: 20px;
+}
+
+.subCatDotImage{
+    cursor: pointer;
+    float:right;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.expandCollapseIcon{
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+    margin-right:1em;
+}
+
+
